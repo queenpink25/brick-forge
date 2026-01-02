@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Forge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Game Header -->
+        <div class="header">
+            <h1><i class="fas fa-gamepad"></i> Brick Forge</h1>
+            <p>Break all bricks to win!</p>
+        </div>
+
+        <!-- Game Stats Bar -->
+        <div class="stats-bar">
+            <div class="stat-box">
+                <i class="fas fa-star"></i>
+                <div>
+                    <div class="stat-label">SCORE</div>
+                    <div class="stat-value" id="score">0000</div>
+                </div>
+            </div>
+            
+            <div class="stat-box">
+                <i class="fas fa-heart"></i>
+                <div>
+                    <div class="stat-label">LIVES</div>
+                    <div class="stat-value" id="lives">3</div>
+                </div>
+            </div>
+            
+            <div class="stat-box">
+                <i class="fas fa-flag"></i>
+                <div>
+                    <div class="stat-label">LEVEL</div>
+                    <div class="stat-value" id="level">1</div>
+                </div>
+            </div>
+            
+            <div class="stat-box">
+                <i class="fas fa-cubes"></i>
+                <div>
+                    <div class="stat-label">BRICKS LEFT</div>
+                    <div class="stat-value" id="bricks-left">24</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Canvas -->
+        <div class="game-area">
+            <canvas id="gameCanvas" width="800" height="500"></canvas>
+            
+            <!-- Start Screen -->
+            <div class="start-screen" id="startScreen">
+                <h2>Ready to Play?</h2>
+                <button class="start-btn" id="startBtn">
+                    <i class="fas fa-play"></i> START GAME
+                </button>
+                <div class="instructions">
+                    <p><i class="fas fa-arrow-left"></i> <i class="fas fa-arrow-right"></i> Move paddle</p>
+                    <p><i class="fas fa-space-awesome"></i> Launch ball</p>
+                    <p>Break all bricks to advance!</p>
+                </div>
+            </div>
+
+            <!-- Level Complete Screen -->
+            <div class="level-screen hidden" id="levelCompleteScreen">
+                <h2>Level Complete!</h2>
+                <p>You cleared level <span id="completedLevel">1</span></p>
+                <button class="next-btn" id="nextLevelBtn">
+                    NEXT LEVEL <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Game Over Screen -->
+            <div class="game-over-screen hidden" id="gameOverScreen">
+                <h2>Game Over</h2>
+                <p>Final Score: <span id="finalScore">0000</span></p>
+                <button class="restart-btn" id="restartBtn">
+                    <i class="fas fa-redo"></i> PLAY AGAIN
+                </button>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="control-buttons">
+                <button class="control-btn" id="leftBtn">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="control-btn" id="launchBtn">
+                    <i class="fas fa-play"></i> LAUNCH
+                </button>
+                <button class="control-btn" id="rightBtn">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            
+            <div class="keyboard-hint">
+                <p>Or use keyboard: ← → ARROWS and SPACEBAR</p>
+            </div>
+        </div>
+
+        <!-- Level Selector -->
+        <div class="level-selector">
+            <h3>Select Level:</h3>
+            <div class="level-buttons" id="levelButtons">
+                <!-- Levels will be added by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
