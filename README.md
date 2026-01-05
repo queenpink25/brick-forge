@@ -1,7 +1,9 @@
 
-BRICK FRGE GAME
+BRICK FORGE GAME
 
 A classic brick breaker game built with HTML5 Canvas, CSS, and JavaScript. Break all the bricks to win!
+
+https://drive.google.com/file/d/1gvhhexhNGsDR4sTCY0S6lYlrNHm1Xhca/view?usp=sharing
 
 
  Features
@@ -48,3 +50,4 @@ Strong brick (2 hits): 20 points
 
 
 Special brick: 30 points
+
