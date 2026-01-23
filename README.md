@@ -3,8 +3,7 @@ BRICK FORGE GAME
 
 A classic brick breaker game built with HTML5 Canvas, CSS, and JavaScript. Break all the bricks to win!
 
-https://drive.google.com/file/d/1gvhhexhNGsDR4sTCY0S6lYlrNHm1Xhca/view?usp=sharing
-
+https://queenpink25.github.io/brick-forge/
 
  Features
  5 Different Levels - Each with unique brick patterns
@@ -50,4 +49,5 @@ Strong brick (2 hits): 20 points
 
 
 Special brick: 30 points
+
 
